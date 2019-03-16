@@ -47,6 +47,7 @@
 		1817DA77223CC22E003B400D /* GroupNotificationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupNotificationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1817DA7B223CC22E003B400D /* GroupNotificationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupNotificationSampleUITests.swift; sourceTree = "<group>"; };
 		1817DA7D223CC22E003B400D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1817DA89223CC691003B400D /* GroupNotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupNotificationSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		1817DA5A223CC22E003B400D /* GroupNotificationSample */ = {
 			isa = PBXGroup;
 			children = (
+				1817DA89223CC691003B400D /* GroupNotificationSample.entitlements */,
 				1817DA5B223CC22E003B400D /* AppDelegate.swift */,
 				1817DA5D223CC22E003B400D /* ViewController.swift */,
 				1817DA5F223CC22E003B400D /* Main.storyboard */,
@@ -194,6 +196,11 @@
 					1817DA57223CC22E003B400D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					1817DA6B223CC22E003B400D = {
 						CreatedOnToolsVersion = 9.2;
@@ -426,11 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GroupNotificationSample/GroupNotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GroupNotificationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.groupnotify.GroupNotificationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.groupnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,11 +449,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GroupNotificationSample/GroupNotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GroupNotificationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.groupnotify.GroupNotificationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.groupnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
