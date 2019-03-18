@@ -8,8 +8,11 @@ iOS 12.0+
 
 Xcode 9 with Swift 4
 
-threadIdentifier: The unique identifier for the thread or conversation related to this notification request. It will be used to visually group notifications together.
+#threadIdentifier: 
+The unique identifier for the thread or conversation related to this notification request. It will be used to visually group notifications together.
 
 
 ### Screenshots
+
+![Alt text](https://github.com/sparkouttech/GroupNotificationsample/blob/master/IMG_2719.PNG "Login")
 
