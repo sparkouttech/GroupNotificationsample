@@ -1,5 +1,5 @@
 # GroupNotificationsample
-Grouped the notifications
+Grouping the notifications based on category or person by custom Notifications group
 
 
 ### Requirements
